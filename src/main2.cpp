@@ -65,6 +65,7 @@ int main(){
     }
 
     cout << "Insercion " << Dni::Comparaciones << endl;
+    Dni::Comparaciones.reset();
 
     for(auto i=0; i < npruebas; i++){
       for (auto i = 0; i < tam; i++){
@@ -77,6 +78,7 @@ int main(){
     }
 
     cout << "Burbuja " << Dni::Comparaciones << endl;
+    Dni::Comparaciones.reset();
 
     for(auto i=0; i < npruebas; i++){
       for (auto i = 0; i < tam; i++){
@@ -89,6 +91,7 @@ int main(){
     }
 
     cout << "Heapsort " << Dni::Comparaciones << endl;
+    Dni::Comparaciones.reset();
 
     for(auto i=0; i < npruebas; i++){
       for (auto i = 0; i < tam; i++){
@@ -101,7 +104,7 @@ int main(){
     }
 
     cout << "Quicksort " << Dni::Comparaciones << endl;
-
+    Dni::Comparaciones.reset();
 
     for(auto i=0; i < npruebas; i++){
       for (auto i = 0; i < tam; i++){
@@ -114,6 +117,7 @@ int main(){
     }
 
     cout << "Shellsort " << Dni::Comparaciones << endl;
+    Dni::Comparaciones.reset();
 
     char d;
     cout <<endl<< "Introduce la letra d si desea visualizar el modo demostración o introduzca cualquier otra para finalizar el programa:" <<endl;
